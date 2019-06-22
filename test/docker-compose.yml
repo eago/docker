@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  hello-world:
+    image: hello-world
+    ports:
+      - 8080:8080
+    networks:
+      - frontend
+    deploy:
+      replicas: 2
+      update_config:
+        parallelism: 2
+        delay: 10s
+      restart_policy:
+        condition: on-failure
+
+
+
+
+
+networks:
+  frontend:
+  backend:
+
+    
