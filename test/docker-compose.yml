@@ -1,4 +1,4 @@
-version: '3'
+version: '3' # This is a shit, in official example, they provide "3", but that didn't work, should change to '3'.
 
 services:
   hello-world:
